@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" data-provider-thread-count="2">
+	<test thread-count="5" name="ParllelTestExecution">
+		<classes>
+			<class
+				name="com.testng.P21.HYR.ParallelTest.ParllelTestExecution">
+				<methods>
+					<include name="dataProviderTest11" >
+					<parameter name="browserName" value="edge" />
+					</include>
+					<include name="dataProviderTest10" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- DataProviderWithDifferentReturnTypes -->
+</suite> <!-- Suite -->

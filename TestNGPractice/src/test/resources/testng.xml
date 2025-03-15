@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test1">
+		<classes>
+			<class name="com.testng.P3.HYR.FirstTest">
+				<methods>
+					<include name="facebookTest" />
+					<include name="googleTest" />
+				</methods>
+			</class>
+
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="Test2">
+		<classes>
+
+			<class name="com.testng.P4.HYR.OrangeHRM">
+				<methods>
+					<include name="loginToOrangeHRMApplication" />
+					<include name="navigateToMyInfo" />
+					<include name="varifyMyInfo" />
+					<include name="varifyLogin" />
+				</methods>
+			</class>
+
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test thread-count="5" name="Test3">
+		<classes>
+
+			<class name="com.testng.P7.HYR.AnnotationsTest">
+				<methods>
+					<include name="testMethod1" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

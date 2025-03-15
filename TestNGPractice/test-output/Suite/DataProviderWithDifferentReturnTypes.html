@@ -1,0 +1,494 @@
+<html>
+<head>
+<title>TestNG:  DataProviderWithDifferentReturnTypes</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DataProviderWithDifferentReturnTypes</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>30/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jul 21 18:51:48 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>57 seconds (57772 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest11()'><b>dataProviderTest11</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: [Ljava.lang.String;@115c946b</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\ssais\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54407}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54407/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest11(DataProviderWithDifferentReturnTypes.java:94)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1679266135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1679266135'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\ssais\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54407}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54407/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest11(DataProviderWithDifferentReturnTypes.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>5</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest11()'><b>dataProviderTest11</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: [Ljava.lang.String;@79ca7bea</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}
+  (Session info: chrome=126.0.6478.183)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [92c7b7f5a48435cc29a95f6cfab52f90, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\ssais\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54407}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54407/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 92c7b7f5a48435cc29a95f6cfab52f90
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest11(DataProviderWithDifferentReturnTypes.java:94)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace544923913", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace544923913'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}
+  (Session info: chrome=126.0.6478.183)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [92c7b7f5a48435cc29a95f6cfab52f90, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\ssais\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54407}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54407/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 92c7b7f5a48435cc29a95f6cfab52f90
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest11(DataProviderWithDifferentReturnTypes.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>8</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest11()'><b>dataProviderTest11</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: [Ljava.lang.String;@54f6b629</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}
+  (Session info: chrome=126.0.6478.183)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [609d063c366c3f5d2dbf645214172f7d, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\ssais\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54355}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54355/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 609d063c366c3f5d2dbf645214172f7d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest11(DataProviderWithDifferentReturnTypes.java:94)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1786522648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1786522648'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}
+  (Session info: chrome=126.0.6478.183)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [609d063c366c3f5d2dbf645214172f7d, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\ssais\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54355}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54355/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 609d063c366c3f5d2dbf645214172f7d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest11(DataProviderWithDifferentReturnTypes.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>7</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest11()'><b>dataProviderTest11</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: [Ljava.lang.String;@4bc9ca97</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;tag name&quot;,&quot;selector&quot;:&quot;h6&quot;}
+  (Session info: chrome=126.0.6478.183)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e082bbfb325f037dccd7545afd17a87c, findElement {using=tag name, value=h6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\ssais\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54389}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54389/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e082bbfb325f037dccd7545afd17a87c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest11(DataProviderWithDifferentReturnTypes.java:99)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1528859290", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1528859290'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;tag name&quot;,&quot;selector&quot;:&quot;h6&quot;}
+  (Session info: chrome=126.0.6478.183)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e082bbfb325f037dccd7545afd17a87c, findElement {using=tag name, value=h6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.183, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\ssais\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54389}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54389/devtoo..., se:cdpVersion: 126.0.6478.183, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e082bbfb325f037dccd7545afd17a87c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest11(DataProviderWithDifferentReturnTypes.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>12</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest5()'><b>dataProviderTest5</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: 456, Mango</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest1()'><b>dataProviderTest1</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: Orange</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest10()'><b>dataProviderTest10</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: Rose</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest3()'><b>dataProviderTest3</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest9()'><b>dataProviderTest9</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: [Ljava.lang.Object;@3e43f049</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest1()'><b>dataProviderTest1</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: Apple</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest6()'><b>dataProviderTest6</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: Mobile</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest8()'><b>dataProviderTest8</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: [Ljava.lang.String;@147cc940</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest5()'><b>dataProviderTest5</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: 123, Apple</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest7()'><b>dataProviderTest7</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: Sun</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest2()'><b>dataProviderTest2</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest1()'><b>dataProviderTest1</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: Mango</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest4()'><b>dataProviderTest4</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: [Ljava.lang.Object;@755a7218</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest4()'><b>dataProviderTest4</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: [Ljava.lang.Object;@70c29356</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest3()'><b>dataProviderTest3</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: number 2</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest5()'><b>dataProviderTest5</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: 789, Orange</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest7()'><b>dataProviderTest7</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: Earth</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest2()'><b>dataProviderTest2</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: 1</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest3()'><b>dataProviderTest3</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: 2</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest4()'><b>dataProviderTest4</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: [Ljava.lang.Object;@5122e4bf</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest6()'><b>dataProviderTest6</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: System</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest6()'><b>dataProviderTest6</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: TV</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest2()'><b>dataProviderTest2</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest3()'><b>dataProviderTest3</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: 3</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest8()'><b>dataProviderTest8</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: [Ljava.lang.String;@23e61112</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest7()'><b>dataProviderTest7</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: Moon</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest9()'><b>dataProviderTest9</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: [Ljava.lang.Object;@58a7dc4</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest10()'><b>dataProviderTest10</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: jasmin</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest1()'><b>dataProviderTest1</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: Banana</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+<tr>
+<td title='com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes.dataProviderTest3()'><b>dataProviderTest3</b><br>Test class: com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes<br>Parameters: number 1</td>
+<td></td>
+<td>0</td>
+<td>com.testng.P16.HYR.DataProviderTest.DataProviderWithDifferentReturnTypes@5ddeb7cb</td></tr>
+</table><p>
+</body>
+</html>

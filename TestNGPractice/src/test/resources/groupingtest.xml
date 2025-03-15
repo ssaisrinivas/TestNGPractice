@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="test1">
+
+		<groups>
+		<define name ="dailyBuild">
+		<include name ="sanity"/>
+		<include name ="functional"/>
+		</define>
+		
+		<define name ="WeekLyBuild">
+		<include name ="smoke"/>
+		<include name ="functional"/>
+		<include name ="regression"/>
+		</define>
+		
+			<run>
+				<include name="dailyBuild" /> 
+				<include name="WeekLyBuild" />
+				<include name="sanity" />
+				<exclude name="functional" /> 
+			</run>
+		</groups>
+
+
+		<classes>
+			<class name="com.testng.P13.HYR.GroupingTest1"/>
+			<class name="com.testng.P13.HYR.GroupingTest4"/>
+			<class name="com.testng.P13.HYR.GroupingTest3"/>
+			<class name="com.testng.P13.HYR.GroupingTest2"/>			
+		</classes>
+	</test>
+</suite>
